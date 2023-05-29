@@ -1,0 +1,176 @@
+
+//portrait tablets
+@media screen and ( min-width: 777px) and (max-width:1025px){
+
+  .bilboard-section{
+  
+  }
+
+  header{
+    .navbar{
+      transform: translateX(5%);
+      .logo-img{
+          object-fit: contain;
+          transform: translateX(70%);
+
+      }
+  }
+  }
+
+  .bilboard-section{
+
+    h1{
+      text-align: center;
+      font-size: 80px;
+    }
+    .MobiTruck-img{
+      object-fit: contain;
+      width: 100%;
+    }
+  }
+
+
+}
+
+//medium devices media queries
+@media screen and ( min-width: 577px) and (max-width:768px) {
+
+  .bilboard-section{
+   
+  }
+
+  header{
+    .navbar{
+      transform: translateX(-19%);
+      .logo-img{
+          object-fit: contain;
+          transform: translateX(30%);
+
+      }
+
+      .navbar-links{
+        ul{
+          li{
+            a{
+              width: 100%;
+            }
+          }
+        }
+      }
+  }
+  }
+
+  .bilboard-section{
+
+    h1{
+      text-align: center;
+      font-size: 70px;
+    }
+    .MobiTruck-img{
+      object-fit: contain;
+      transform: translateX(-10%);
+      width: 140%;
+    }
+  }
+
+
+}
+
+//small screens media queries
+
+@media screen and  (max-width: 567px){
+
+  header{
+    .navbar{
+/*       .toggle-button{
+        display: flex;
+        margin-right: -90px;
+      }
+      .navbar-links{
+        display: none;
+      }*/
+
+      .logo-img{
+        object-fit: contain;
+        width: 35%;
+        margin-left: -60px;
+      
+      }
+
+      .toggle-button{
+        display: flex;
+        margin-right: -90px;
+    }
+
+    .navbar-links{
+        display: none;
+        width: 100%;
+
+        ul{
+          width: 100%;
+          flex-direction: column;
+
+          li{
+            text-align: center;
+            a{
+              padding: .5rem 1rem;
+
+              &:hover{
+                background-color: blueviolet;
+                color: white;
+              }
+
+              &.active{
+                
+              }
+            }
+          }
+        }
+
+        &.active{
+          display: flex;
+        }
+    }
+
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+/* Brings nav links to the center */
+    .navbar-links li{
+        
+    }
+
+    /* Brings the nav links closer */
+    .navbar-links li a{
+        
+    }
+
+    .navbar-links li a:hover{
+
+    }
+
+    .navbar-links.active{
+         
+    }
+
+    }
+  }
+
+  .bilboard-section{
+    h1{
+      text-align: center;
+      width: 100%;
+      transform: translateY(-15%);
+    }
+
+    .MobiTruck-img{
+      object-fit: contain;
+      width: 300%;
+      transform: translateX(-25%);
+      
+    }
+  }
+
+}
